@@ -1,5 +1,7 @@
 # Gilded Rose Refactoring Kata
 
+This is the Gilded Rose kata in TypeScript.
+
 This Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes). It is already on GitHub [here](https://github.com/NotMyself/GildedRose). See also [Bobby Johnson's description of the kata](https://iamnotmyself.com/refactor-this-the-gilded-rose-kata/).
 
 I translated the original C# into a few other languages, (with a little help from my friends!), and slightly changed the starting position. This means I've actually done a small amount of refactoring already compared with the original form of the kata, and made it easier to get going with writing tests by giving you one failing unit test to start with. I also added test fixtures for Text-Based approval testing with TextTest (see [the TextTests](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests))
@@ -50,4 +52,36 @@ Please note a translation should ideally include:
 Please don't write too much code in the starting position or add too many unit tests. The idea with the one failing unit test is to tempt people to work out how to fix it, discover it wasn't that hard, and now they understand what this test is doing they realize they can improve it.  
 
 If your programming language doesn't have an easy way to add a command-line interface, then the TextTest fixture is probably not necessary.
+
+## Getting started
+
+Install dependencies
+
+```sh
+npm install
+```
+
+## Running app
+_You may need to install `ts-node`_
+
+```sh
+npx ts-node test/golden-master-text-test.ts
+```
+
+Or with number of days as args:
+```sh
+npx ts-node test/golden-master-text-test.ts 10
+```
+
+## Running Jest tests
+
+```sh
+npm run test:jest
+```
+
+To run all tests in watch mode
+
+```sh
+npm run test:jest:watch
+```
 

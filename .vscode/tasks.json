@@ -19,10 +19,27 @@
     {
       "type": "npm",
       "script": "test:jest:watch",
-      "group": "build",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
       "problemMatcher": [],
       "label": "npm: test:jest:watch",
       "detail": "jest --watchAll"
+    },
+    {
+      "type": "shell",
+      "command": "npx ts-node test/golden-master-text-test.ts",
+      "problemMatcher": [],
+      "label": "golden-master-text-test 2 days",
+      "detail": "npx"
+    },
+    {
+      "type": "shell",
+      "command": "npx ts-node test/golden-master-text-test.ts 10",
+      "problemMatcher": [],
+      "label": "golden-master-text-test 10 days",
+      "detail": "npx"
     }
   ]
 }
